@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      color: whitesmoke;
+    }
+    h1 {
+      font-family: "Bellefair", serif;
+      font-size: 125px;
+    }
+    h4 {
+      font-family: "Barlow Condensed", sans-serif;
+      position: absolute;
+      font-size: 1.3rem;
+      color: whitesmoke;
+      letter-spacing: 0.2rem;
+      left: 8rem;
+      top: 32%;
+    }
+    p {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.03rem;
+      line-height: 1.4rem;
+      color: lightgray;
+      padding-top: 1rem;
+    }
+    body {
+      background-image: url("assets/technology/background-technology-desktop.jpg  ");
+    }
+    #logo {
+      position: absolute;
+      top: 55px;
+      left: 55px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+      margin-left: 4rem;
+    }
+
+    li {
+      list-style-type: none;
+      font-family: "Barlow Condensed", sans-serif;
+      letter-spacing: 0.1rem;
+
+      font-size: 1rem;
+    }
+    li a:hover {
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    .navbar {
+      width: 55%;
+      position: absolute;
+      right: 0;
+      background: rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      padding: 2rem;
+      border: 0.5px solid rgba(0, 0, 0, 0.05);
+      margin-top: 2.5rem;
+    }
+
+    hr {
+      position: absolute;
+    }
+    #nav-logo-style {
+      top: 5rem;
+      left: 10rem;
+      width: 35%;
+      border: 0.1px solid rgb(128, 128, 128, 0.3);
+      z-index: 1;
+    }
+
+    #selected-nav {
+      top: 7.5rem;
+      left: 81%;
+      width: 8.5%;
+      z-index: 1;
+      border: 0.1px solid white;
+    }
+
+    .hero {
+      width: 70%;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      font-family: "Bellefair", serif;
+      color: whitesmoke;
+      margin-top: 0.8rem;
+      padding-top: 0.8rem;
+      margin-block-start: 0;
+    }
+
+    .hero h3 {
+      font-size: 2.2rem;
+      font-family: "Bellefair", serif;
+      color: whitesmoke;
+      margin-top: 0.8rem;
+      padding-top: 0.8rem;
+      margin-block-start: 0;
+      letter-spacing: 0.2rem;
+    }
+    .hero h5 {
+      font-family: "Barlow Condensed", sans-serif;
+      color: lightgray;
+      font-size: 1rem;
+      position: static;
+    }
+    .move-next {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100px;
+      height: 200px;
+    }
+    .move-circle {
+      background-color: transparent;
+      border: 1px solid rgb(128, 128, 128, 0.4);
+      border-radius: 100%;
+      width: 3rem;
+      height: 3rem;
+      text-align: center;
+    }
+    .together {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      position: absolute;
+      top: 60%;
+      left: 8rem;
+      height: 450px;
+    }
+  </style>
+
+  <body>
+    <object
+      id="logo"
+      data="assets/shared/logo.svg"
+      width="48"
+      height="48"
+    ></object>
+    <hr id="nav-logo-style" />
+    <hr id="selected-nav" />
+
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="/starter-code/index.html"><strong>00</strong>&ensp; HOME</a>
+        </li>
+        <li>
+          <a href="/starter-code/destination-moon.html"
+            ><strong>01</strong>&ensp; DESTINATION</a
+          >
+        </li>
+        <li>
+          <a href="/starter-code/crew-commander.html"
+            ><strong>02</strong>&ensp; CREW</a
+          >
+        </li>
+        <li>
+          <a href="/starter-code/technology-vehicle.html"
+            ><strong>03</strong>&ensp; TECHNOLOGY</a
+          >
+        </li>
+      </ul>
+    </div>
+    <h4><strong style="color: grey">03</strong>&ensp;&nbsp;SPACE LAUNCH 101</h4>
+    <div class="together">
+      <div class="move-next">
+        <a href="technology-vehicle.html">
+          <div class="move-circle" style="background-color: whitesmoke">
+            <h3 style="color: black">1</h3>
+          </div>
+        </a>
+        <a href="technology-spaceport.html">
+          <div class="move-circle"><h3>2</h3></div>
+        </a>
+        <a href="technology-capsule.html">
+          <div class="move-circle"><h3>3</h3></div>
+        </a>
+      </div>
+      <div class="hero">
+        <h5>THE TERMINOLOGY ...</h5>
+        <h3>LAUNCH VEHICLE</h3>
+        <p style="color: lightgray; width: 80%; line-height: 1.5rem">
+          A launch vehicle or carrier rocket is a rocket-propelled vehicle used
+          to carry a payload from Earth&rsquo;s surface to space, usually to
+          Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+          in operation. Standing 150 metres tall, it&rsquo;s quite an
+          awe-inspiring sight on the launch pad!
+        </p>
+      </div>
+    </div>
+    <img
+      src="assets/technology/image-launch-vehicle-portrait.jpg"
+      alt="vehicle"
+      style="position: absolute; top: 50%; right: 0%; width: 35%; height: 70%"
+    />
+  </body>
+</html>

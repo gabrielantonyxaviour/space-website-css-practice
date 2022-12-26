@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      color: whitesmoke;
+    }
+    h1 {
+      font-family: "Bellefair", serif;
+      font-size: 150px;
+    }
+    h5 {
+      font-family: "Barlow Condensed", sans-serif;
+      position: absolute;
+      font-size: 1.3rem;
+      color: whitesmoke;
+      letter-spacing: 0.2rem;
+      left: 10rem;
+      top: 32%;
+    }
+    p {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.03rem;
+      line-height: 1.4rem;
+      color: lightgray;
+      margin: 30px 0 50px;
+    }
+    body {
+      background-image: url("assets/destination/background-destination-desktop.jpg");
+    }
+    #logo {
+      position: absolute;
+      top: 55px;
+      left: 55px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+      margin-left: 4rem;
+    }
+
+    li {
+      list-style-type: none;
+      font-family: "Barlow Condensed", sans-serif;
+      letter-spacing: 0.1rem;
+      font-size: 1rem;
+    }
+    li a:hover {
+      cursor: pointer;
+    }
+    a {
+      color: lightgray;
+
+      text-decoration: none;
+    }
+
+    .navbar {
+      width: 55%;
+      position: absolute;
+      right: 0;
+      background: rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      padding: 2rem;
+      border: 0.5px solid rgba(0, 0, 0, 0.05);
+      margin-top: 2.5rem;
+    }
+
+    hr {
+      position: absolute;
+    }
+    #nav-logo-style {
+      top: 5rem;
+      left: 10rem;
+      width: 35%;
+      border: 0.1px solid rgb(128, 128, 128, 0.3);
+      z-index: 1;
+    }
+
+    #selected-nav {
+      top: 7.5rem;
+      left: 61%;
+      width: 8.5%;
+      z-index: 1;
+      border: 0.1px solid white;
+    }
+
+    #selected-planet {
+      position: absolute;
+      top: 6%;
+      left: 65.5%;
+      border: 0.2px solid white;
+      width: 9%;
+    }
+
+    h2 {
+      font-family: "Bellefair", serif;
+      font-size: 100px;
+      padding: 40px 0 0;
+    }
+
+    .hero {
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      right: 7rem;
+      height: 450px;
+    }
+    .hero ul {
+      margin-left: 0;
+    }
+    .hero hr {
+      position: static;
+      border: 0.1px solid rgb(128, 128, 128, 0.3);
+    }
+    .stats {
+      margin-top: 1.5rem;
+      column-count: 2;
+      column-width: 100px;
+      column-gap: 0px;
+      height: 200px;
+    }
+    .stats h5 {
+      position: static;
+      display: block;
+      font-family: "Barlow Condensed", sans-serif;
+      letter-spacing: 0.2rem;
+      color: lightgray;
+      font-size: 0.8rem;
+    }
+    .stats h4 {
+      color: white;
+      font-family: "Bellefair", serif;
+      font-size: 1.7rem;
+      margin-top: 0.5rem;
+    }
+  </style>
+  <body>
+    <object
+      id="logo"
+      data="assets/shared/logo.svg"
+      width="48"
+      height="48"
+    ></object>
+    <hr id="nav-logo-style" />
+    <hr id="selected-nav" />
+
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="/starter-code/index.html"><strong>00</strong>&ensp; HOME</a>
+        </li>
+        <li>
+          <a href="/starter-code/destination-moon.html"
+            ><strong>01</strong>&ensp; DESTINATION</a
+          >
+        </li>
+        <li>
+          <a href="/starter-code/crew-commander.html"
+            ><strong>02</strong>&ensp; CREW</a
+          >
+        </li>
+        <li>
+          <a href="/starter-code/technology-vehicle.html"
+            ><strong>03</strong>&ensp; TECHNOLOGY</a
+          >
+        </li>
+      </ul>
+    </div>
+    <h5>
+      <strong style="color: grey">01</strong>&ensp;&nbsp;PICK YOUR DESTINATION
+    </h5>
+    <img
+      src="assets/destination/image-titan.png"
+      style="position: absolute; top: 50%; left: 15%"
+    />
+    <div class="hero">
+      <ul>
+        <li>
+          <a
+            style="color: whitesmoke"
+            href="/starter-code/destination-moon.html"
+            >MOON</a
+          >
+        </li>
+        <li>
+          <a href="/starter-code/destination-mars.html">MARS</a>
+        </li>
+        <li>
+          <a href="/starter-code/destination-europa.html">EUROPA</a>
+        </li>
+        <li>
+          <a href="/starter-code/destination-titan.html">TITAN</a>
+        </li>
+      </ul>
+      <hr id="selected-planet" />
+      <h2>TITAN</h2>
+      <p>
+        The only moon known to have a dense atmosphere other than Earth, Titan
+        is a home away from home (just a few hundred degrees colder!). As a
+        bonus, you get striking views of the Rings of Saturn.
+      </p>
+      <hr />
+      <div class="stats">
+        <div class="distance">
+          <h5>AVG. DISTANCE</h5>
+          <h4>1.6 BIL. KM</h4>
+        </div>
+        <div class="time">
+          <h5>EST. TRAVEL TIME</h5>
+          <h4>7 YEARS</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

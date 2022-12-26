@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      color: whitesmoke;
+    }
+    h1 {
+      font-family: "Bellefair", serif;
+      font-size: 125px;
+    }
+    h5 {
+      font-family: "Barlow Condensed", sans-serif;
+      letter-spacing: 0.1rem;
+      font-size: 1.8rem;
+      font-weight: 200;
+      padding-bottom: 1rem;
+    }
+    p {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.03rem;
+      line-height: 1.4rem;
+      color: lightgray;
+      padding-top: 1rem;
+    }
+    body {
+      background-image: url("assets/home/background-home-desktop.jpg");
+    }
+    #logo {
+      position: absolute;
+      top: 55px;
+      left: 55px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+      margin-left: 4rem;
+    }
+
+    li {
+      list-style-type: none;
+      font-family: "Barlow Condensed", sans-serif;
+      letter-spacing: 0.1rem;
+
+      font-size: 1rem;
+    }
+    li a:hover {
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    .navbar {
+      width: 55%;
+      position: absolute;
+      right: 0;
+      background: rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      padding: 2rem;
+      border: 0.5px solid rgba(0, 0, 0, 0.05);
+      margin-top: 2.5rem;
+    }
+
+    hr {
+      position: absolute;
+    }
+    #nav-logo-style {
+      top: 5rem;
+      left: 10rem;
+      width: 35%;
+      border: 0.1px solid rgb(128, 128, 128, 0.3);
+      z-index: 1;
+    }
+
+    #selected-nav {
+      top: 7.5rem;
+      left: 52.9%;
+      width: 4.8%;
+      z-index: 1;
+      border: 0.1px solid white;
+    }
+
+    .hero {
+      width: 30%;
+      position: absolute;
+      top: 50%;
+      left: 7rem;
+      height: 450px;
+    }
+    .explore {
+      border-radius: 100%;
+      background: whitesmoke;
+      width: 10rem;
+      height: 10rem;
+      position: absolute;
+      right: 15%;
+      top: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .explore:hover {
+      cursor: pointer;
+    }
+    .explore h5 {
+      font-family: "Bellefair", serif;
+      font-size: 1.3rem;
+      padding-bottom: 0;
+    }
+  </style>
+
+  <body>
+    <object
+      id="logo"
+      data="assets/shared/logo.svg"
+      width="48"
+      height="48"
+    ></object>
+    <hr id="nav-logo-style" />
+    <hr id="selected-nav" />
+
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="/starter-code/index.html"><strong>00</strong>&ensp; HOME</a>
+        </li>
+        <li>
+          <a href="/starter-code/destination-moon.html"
+            ><strong>01</strong>&ensp; DESTINATION</a
+          >
+        </li>
+        <li>
+          <a href="/starter-code/crew-commander.html"
+            ><strong>02</strong>&ensp; CREW</a
+          >
+        </li>
+        <li>
+          <a href="/starter-code/technology-vehicle.html"
+            ><strong>03</strong>&ensp; TECHNOLOGY</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="hero">
+      <h5 style="color: lightgray">SO, YOU WANT TO TRAVEL TO</h5>
+      <h1>SPACE</h1>
+      <p style="color: lightgray">
+        Let&rsquo;s face it; if you want to go to space, you might as well
+        genuinely go to outer space and not hover kind of on the edge of it.
+        Well sit back, and relax because we&rsquo;ll give you a truly out of
+        this world experience!
+      </p>
+    </div>
+    <div class="explore">
+      <h5>
+        <a href="/starter-code/destination-moon.html" style="color: black"
+          >EXPLORE</a
+        >
+      </h5>
+    </div>
+  </body>
+</html>
